@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Page</title>
+</head>
+<h1>Laptop</h1>
+<body>
+    {{#each laptops}}
+    <ul class="">
+        <li>{{this.name}}</li>
+        <li>{{this.cuisine}}</li>
+        <li>{{this.ingredient}}</li>
+        <li>{{this.recipeName}}</li>
+        <li>{{this.price}}</li>
+        <button><a href="/delete/{{this.recipeId}}">Delete</a></button>
+    </ul>
+    {{/each}}
+</body>
+
+</html>
